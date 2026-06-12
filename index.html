@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+
+<script>
+    let number = 2;
+
+    if (number < 0) {
+        document.writeln("The number is negative<br>");
+        console.log("Number is negative");
+    }
+    else if (number > 0) {
+        document.writeln("The number is positive<br>");
+        console.log("Number is positive");
+    }
+    else {
+        document.writeln("The number is zero<br>");
+        console.log("The number is zero");
+    }
+
+    let a = 10;
+    let b = 20;
+    let temp;
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    document.writeln("a = " + a + "<br>");
+    document.writeln("b = " + b + "<br>");
+
+    alert("a = " + a + "\nb = " + b);
+    function largest(a,b){
+        if(a>b){
+            document.write("a is largest<br>");
+        }
+        else if(a<b){
+            document.write("b is largest<br>");
+
+        }
+
+
+    }
+   
+     largest(10,5);
+
+    const student = {
+    name: "soorya",
+    class: "b.tech",
+    mark: 90,
+
+    details() {
+        document.writeln(this.name + " got " + this.mark + "%mark<br>");
+    }
+};
+
+student.details();
+
+const result = (mark) => {
+    if (mark < 40) {
+        document.write("Result: Fail<br>");
+    } else {
+        document.write("Result: Pass<br>");
+    }
+};
+
+result(student.mark);
+</script>
+
+</body>
+</html>
